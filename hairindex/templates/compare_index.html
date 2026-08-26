@@ -1,7 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-<p class="eyebrow">Compare</p>
-<h1>Any two providers, side by side</h1>
-<p class="lede">{{ pairs|length }} comparisons, one per pair, generated from the same data as the ledger so they never disagree with it.</p>
-<ul class="cols">{% for slug, a, b in pairs %}<li><a href="{{ rel('compare/' ~ slug ~ '/') }}">{{ a.name }} vs {{ b.name }}</a></li>{% endfor %}</ul>
-{% endblock %}
