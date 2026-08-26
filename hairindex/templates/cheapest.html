@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% from "_macros.html" import stamp, serves_label, provider_button with context %}
+{% block content %}
+<p class="eyebrow">Cheapest by treatment · {{ checked|nice_date }}</p>
+<h1>Cheapest {{ fmt.label.lower() }} online</h1>
+{% if rows %}
+<p class="lede">{{ rows|length }} providers publish a price for {{ fmt.label.lower() }}. Lowest first. The "plan behind the price" column is the part the headline leaves out.</p>
+<div class="scroll">
+<table class="ledger" style="min-width:720px">
+  <thead><tr><th class="sticky">Provider</th><th>From</th><th>Plan behind the price</th><th>Status</th><th></th></tr></thead>
+  <tbody>
+  {% for p, e in rows %}
+  <tr>
+    <td class="sticky name"><a href="{{ rel('reviews/' ~ p.slug ~ '/') }}">{{ p.name }}</a><br><span class="serves">{{ serves_label(p.serves) }}{% if p.model == 'consult_only' %} · consult only, pharmacy price{% endif %}</span></td>
+    <td class="price{% if loop.first and p.model != 'consult_only' %} best{% endif %}">{{ e.from|money }}{% if loop.first and p.model != 'consult_only' %}<span class="pill">cheapest</span>{% endif %}</td>
+    <td>{{ e.note }}</td>
+    <td>{{ stamp(e.status) }}</td>
+    <td>{{ provider_button(p, 'Visit', placement='cheapest') }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% else %}
+<p class="lede">No provider in the index publishes a price for {{ fmt.label.lower() }} yet.</p>
+{% endif %}
+{% if unpriced %}
+<h2>Offered, price not published</h2>
+<ul class="plain">{% for p, e in unpriced %}<li><a href="{{ rel('reviews/' ~ p.slug ~ '/') }}">{{ p.name }}</a> — {{ e.note }}</li>{% endfor %}</ul>
+{% endif %}
+<h2>Other treatments</h2>
+<ul class="cols">{% for f in formats if f.key != fmt.key %}<li><a href="{{ rel('cheapest/' ~ f.key.replace('_','-') ~ '/') }}">Cheapest {{ f.label.lower() }}</a></li>{% endfor %}</ul>
+{% endblock %}
