@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% from "_macros.html" import serves_label with context %}
+{% block content %}
+<p class="eyebrow">All providers</p>
+<h1>{{ providers|length }} hair-loss telehealth providers, priced</h1>
+<p class="lede">Ordered by oral finasteride price. Every page lists each treatment's monthly price, the plan behind it, fees, cancellation terms and sources.</p>
+<div class="cards">
+{% for p in providers %}
+<div class="card">
+  <span class="serves">{{ serves_label(p.serves) }} · {{ p.format_count }} priced formats</span>
+  <h3><a href="{{ rel('reviews/' ~ p.slug ~ '/') }}">{{ p.name }}</a></h3>
+  <div class="big">{% if p.anchor_price is not none %}{{ p.anchor_price|money }}<small>/mo from</small>{% else %}—{% endif %}</div>
+  <p class="muted" style="margin:0;font-size:.9rem">{{ p.summary }}</p>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

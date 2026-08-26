@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "_macros.html" import serves_label with context %}
+{% block content %}
+<p class="eyebrow">Cancelling · {{ p.name }}</p>
+<h1>How to cancel {{ p.name }}</h1>
+<p class="lede">{{ p.name }}'s cancellation and refund terms, as published on {{ checked|nice_date }}, and what the same treatments cost elsewhere.</p>
+<dl class="kv">
+  <dt>Cancellation</dt><dd>{{ p.cancel_policy }}</dd>
+  <dt>Refunds</dt><dd>{{ p.refund_policy }}</dd>
+  <dt>Billing cycle</dt><dd>{{ p.billing }}</dd>
+  <dt>Before you cancel</dt><dd>Check when the next shipment is charged; most providers bill a few days before dispatch, and a cancelled subscription rarely refunds a shipment already sent.</dd>
+</dl>
+<p><a class="btn ghost" href="{{ p.url }}" rel="noopener nofollow" target="_blank">Open {{ p.name }}'s site</a></p>
+{% if alts %}
+<h2>Cheaper places to get the same treatments</h2>
+<ul class="plain">
+{% for q in alts %}<li><a href="{{ rel('reviews/' ~ q.slug ~ '/') }}"><strong>{{ q.name }}</strong></a> — from {{ q.anchor_price|money }}/mo · {{ serves_label(q.serves) }} · {{ q.summary }}</li>{% endfor %}
+</ul>
+{% endif %}
+<p><a href="{{ rel('reviews/' ~ p.slug ~ '/') }}">Full {{ p.name }} price breakdown →</a></p>
+{% endblock %}

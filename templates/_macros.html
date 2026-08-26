@@ -1,0 +1,25 @@
+{% macro price_cell(entry, is_best=false) -%}
+{% if entry and entry.from is not none -%}
+<td class="price{% if is_best %} best{% endif %}{% if entry.status != 'verified' %} pending{% endif %}"><abbr title="{{ entry.note }} — {{ STATUS_LABEL[entry.status] }}">{{ entry.from|money }}</abbr>{% if is_best %}<span class="pill">cheapest</span>{% endif %}</td>
+{%- elif entry -%}
+<td class="dash" title="{{ entry.note }}">offered</td>
+{%- else -%}
+<td class="dash" aria-label="not offered">—</td>
+{%- endif %}
+{%- endmacro %}
+
+{% macro stamp(status) -%}
+{% if status == 'verified' %}<span class="stamp ok">checked at checkout</span>{% elif status == 'conflicting' %}<span class="stamp warn">sources disagree</span>{% elif status == 'unknown' %}<span class="stamp">not published</span>{% else %}<span class="stamp">published price · checkout check pending</span>{% endif %}
+{%- endmacro %}
+
+{% macro serves_label(s) -%}
+{% if s == 'both' %}Men &amp; women{% elif s == 'women' %}Women{% else %}Men{% endif %}
+{%- endmacro %}
+
+{% macro provider_button(p, label=None, placement='button') -%}
+{%- if p.affiliate.url -%}
+{%- set sep = '&' if '?' in p.affiliate.url else '?' -%}
+{%- set href = p.affiliate.url ~ sep ~ (p.affiliate.subid_param or 'subid') ~ '=' ~ ((path or 'home')|replace('/', '-')) ~ '-' ~ placement -%}
+{%- else -%}{%- set href = p.url -%}{%- endif -%}
+<a class="btn" href="{{ href }}" rel="nofollow sponsored noopener" target="_blank">{{ label or ('Go to ' ~ p.name) }}</a>
+{%- endmacro %}
