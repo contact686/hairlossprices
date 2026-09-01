@@ -4,5 +4,11 @@
     "type": "Launch",
     "title": "Index launched with 12 providers and 9 treatment formats",
     "body": "First public build. Every price was read from published sources on 26 August 2026 and is labelled 'checkout check pending' until it has been confirmed on the provider's own checkout page. Affiliate links are not yet active; every button goes straight to the provider."
+  },
+  {
+    "date": "2026-09-01",
+    "type": "Monthly check",
+    "title": "29 price(s) need a manual re-check",
+    "body": "Hims bundle: $44 not found on the page; Keeps oral_finasteride: $16 not found on the page; Keeps topical_minoxidil: $10 not found on the page; Keeps bundle: $25 not found on the page; Ro (Roman) oral_finasteride: source page could not be fetched; Ro (Roman) topical_fin_min: source page could not be fetched; Ro (Roman) bundle: source page could not be fetched; Happy Head oral_finasteride: $24 not found on the page; Happy Head topical_minoxidil: $59 not found on the page; Happy Head oral_minoxidil: $22 not found on the page; Happy Head oral_dutasteride: $59 not found on the page; Happy Head topical_dutasteride: $89 not found on the page; Happy Head spironolactone: $50 not found on the page; Happy Head bundle: $71 not found on the page; Strut Health topical_finasteride: $59 not found on the page; Strut Health topical_fin_min: $59 not found on the page; Strut Health oral_minoxidil: $18 not found on the page; Strut Health spironolactone: $59 not found on the page; Strut Health bundle: $79 not found on the page; XYON Health oral_finasteride: $35 not found on the page; XYON Health topical_finasteride: $99 not found on the page; XYON Health topical_dutasteride: $129 not found on the page; Hers topical_minoxidil: source page could not be fetched; Hers bundle: source page could not be fetched; Musely oral_dutasteride: $39 not found on the page; Musely topical_dutasteride: $30 not found on the page; Musely spironolactone: $29 not found on the page; Lemonaid Health oral_finasteride: $20 not found on the page; MangoRx bundle: $90 not found on the page"
   }
 ]

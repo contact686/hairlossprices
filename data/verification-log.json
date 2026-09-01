@@ -1,0 +1,325 @@
+{
+  "run": "2026-09-01",
+  "results": [
+    {
+      "provider": "hims",
+      "format": "oral_finasteride",
+      "price": 22,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.hims.com/hair-loss"
+    },
+    {
+      "provider": "hims",
+      "format": "topical_fin_min",
+      "price": 35,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.hims.com/hair-loss"
+    },
+    {
+      "provider": "hims",
+      "format": "topical_minoxidil",
+      "price": 15,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.hims.com/hair-loss"
+    },
+    {
+      "provider": "hims",
+      "format": "bundle",
+      "price": 44,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.hims.com/hair-loss"
+    },
+    {
+      "provider": "keeps",
+      "format": "oral_finasteride",
+      "price": 16,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.keeps.com"
+    },
+    {
+      "provider": "keeps",
+      "format": "topical_minoxidil",
+      "price": 10,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.keeps.com"
+    },
+    {
+      "provider": "keeps",
+      "format": "bundle",
+      "price": 25,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.keeps.com"
+    },
+    {
+      "provider": "ro",
+      "format": "oral_finasteride",
+      "price": 15,
+      "found": false,
+      "fetched": false,
+      "url": "https://ro.co/hair"
+    },
+    {
+      "provider": "ro",
+      "format": "topical_fin_min",
+      "price": 40,
+      "found": false,
+      "fetched": false,
+      "url": "https://ro.co/hair"
+    },
+    {
+      "provider": "ro",
+      "format": "bundle",
+      "price": 60,
+      "found": false,
+      "fetched": false,
+      "url": "https://ro.co/hair"
+    },
+    {
+      "provider": "happy-head",
+      "format": "oral_finasteride",
+      "price": 24,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.happyhead.com/products/topical-solution-finasteride-minoxidil"
+    },
+    {
+      "provider": "happy-head",
+      "format": "topical_fin_min",
+      "price": 79,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.happyhead.com/products/topical-solution-finasteride-minoxidil"
+    },
+    {
+      "provider": "happy-head",
+      "format": "topical_minoxidil",
+      "price": 59,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.happyhead.com/products/topical-solution-finasteride-minoxidil"
+    },
+    {
+      "provider": "happy-head",
+      "format": "oral_minoxidil",
+      "price": 22,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.happyhead.com/products/topical-solution-finasteride-minoxidil"
+    },
+    {
+      "provider": "happy-head",
+      "format": "oral_dutasteride",
+      "price": 59,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.happyhead.com/products/topical-solution-finasteride-minoxidil"
+    },
+    {
+      "provider": "happy-head",
+      "format": "topical_dutasteride",
+      "price": 89,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.happyhead.com/products/topical-solution-finasteride-minoxidil"
+    },
+    {
+      "provider": "happy-head",
+      "format": "spironolactone",
+      "price": 50,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.happyhead.com/products/topical-solution-finasteride-minoxidil"
+    },
+    {
+      "provider": "happy-head",
+      "format": "bundle",
+      "price": 71,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.happyhead.com/products/topical-solution-finasteride-minoxidil"
+    },
+    {
+      "provider": "strut-health",
+      "format": "oral_finasteride",
+      "price": 25,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.struthealth.com/hair-loss"
+    },
+    {
+      "provider": "strut-health",
+      "format": "topical_finasteride",
+      "price": 59,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.struthealth.com/hair-loss"
+    },
+    {
+      "provider": "strut-health",
+      "format": "topical_fin_min",
+      "price": 59,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.struthealth.com/hair-loss"
+    },
+    {
+      "provider": "strut-health",
+      "format": "oral_minoxidil",
+      "price": 18,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.struthealth.com/hair-loss"
+    },
+    {
+      "provider": "strut-health",
+      "format": "oral_dutasteride",
+      "price": 39,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.struthealth.com/hair-loss"
+    },
+    {
+      "provider": "strut-health",
+      "format": "topical_dutasteride",
+      "price": 69,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.struthealth.com/dutasteride"
+    },
+    {
+      "provider": "strut-health",
+      "format": "spironolactone",
+      "price": 59,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.struthealth.com/hair-loss"
+    },
+    {
+      "provider": "strut-health",
+      "format": "bundle",
+      "price": 79,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.struthealth.com/hair-loss"
+    },
+    {
+      "provider": "xyon-health",
+      "format": "oral_finasteride",
+      "price": 35,
+      "found": false,
+      "fetched": true,
+      "url": "https://xyonhealth.com/products/topical-finasteride"
+    },
+    {
+      "provider": "xyon-health",
+      "format": "topical_finasteride",
+      "price": 99,
+      "found": false,
+      "fetched": true,
+      "url": "https://xyonhealth.com/products/topical-finasteride"
+    },
+    {
+      "provider": "xyon-health",
+      "format": "topical_dutasteride",
+      "price": 129,
+      "found": false,
+      "fetched": true,
+      "url": "https://xyonhealth.com/products/topical-finasteride"
+    },
+    {
+      "provider": "hers",
+      "format": "topical_minoxidil",
+      "price": 13,
+      "found": false,
+      "fetched": false,
+      "url": "https://www.forhers.com/drugs/info/minoxidil"
+    },
+    {
+      "provider": "hers",
+      "format": "bundle",
+      "price": 39,
+      "found": false,
+      "fetched": false,
+      "url": "https://www.forhers.com/drugs/info/minoxidil"
+    },
+    {
+      "provider": "oana-health",
+      "format": "oral_minoxidil",
+      "price": 25,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.oanahealth.com/post/hormonal-treatments-female-hair-loss-cost-breakdown"
+    },
+    {
+      "provider": "oana-health",
+      "format": "spironolactone",
+      "price": 14,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.oanahealth.com/post/hormonal-treatments-female-hair-loss-cost-breakdown"
+    },
+    {
+      "provider": "oana-health",
+      "format": "bundle",
+      "price": 40,
+      "found": true,
+      "fetched": true,
+      "url": "https://www.oanahealth.com/post/hormonal-treatments-female-hair-loss-cost-breakdown"
+    },
+    {
+      "provider": "musely",
+      "format": "oral_dutasteride",
+      "price": 39,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.musely.com"
+    },
+    {
+      "provider": "musely",
+      "format": "topical_dutasteride",
+      "price": 30,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.musely.com"
+    },
+    {
+      "provider": "musely",
+      "format": "spironolactone",
+      "price": 29,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.musely.com"
+    },
+    {
+      "provider": "lemonaid-health",
+      "format": "oral_finasteride",
+      "price": 20,
+      "found": false,
+      "fetched": true,
+      "url": "https://www.lemonaidhealth.com/services/hl-choices"
+    },
+    {
+      "provider": "mangorx",
+      "format": "bundle",
+      "price": 90,
+      "found": false,
+      "fetched": true,
+      "url": "https://mangorx.com/products/grow"
+    },
+    {
+      "provider": "dr-b",
+      "format": "oral_finasteride",
+      "price": 7,
+      "found": true,
+      "fetched": true,
+      "url": "https://drb.ai/resources/cheapest-online-hair-loss-treatment-cost-comparison"
+    }
+  ]
+}
