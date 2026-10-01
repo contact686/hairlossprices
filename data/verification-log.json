@@ -1,5 +1,5 @@
 {
-  "run": "2026-09-01",
+  "run": "2026-10-01",
   "results": [
     {
       "provider": "hims",
@@ -29,7 +29,7 @@
       "provider": "hims",
       "format": "bundle",
       "price": 44,
-      "found": false,
+      "found": true,
       "fetched": true,
       "url": "https://www.hims.com/hair-loss"
     },
@@ -173,7 +173,7 @@
       "provider": "strut-health",
       "format": "oral_minoxidil",
       "price": 18,
-      "found": false,
+      "found": true,
       "fetched": true,
       "url": "https://www.struthealth.com/hair-loss"
     },
